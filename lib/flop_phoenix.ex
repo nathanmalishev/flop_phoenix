@@ -657,7 +657,7 @@ defmodule Flop.Phoenix do
       of a column this way.
       """
 
-    attr :rest, :global,
+    attr :attrs, :list,
       doc: """
       Any additional attributes to pass to the `<td>`.
       """
@@ -692,7 +692,7 @@ defmodule Flop.Phoenix do
       of a column this way.
       """
 
-    attr :rest, :global,
+    attr :attrs, :list,
       doc: """
       Any additional attributes to pass to the `<td>`.
       """
