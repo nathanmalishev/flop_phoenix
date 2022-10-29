@@ -157,7 +157,7 @@ defmodule Flop.Phoenix.Table do
         </tr>
       </thead>
       <tbody {@opts[:tbody_attrs]}>
-        <tr :for={item <- @items} {@opts[:tbody_tr_attrs]} id={"#{item[:id]}"}>
+        <tr :for={item <- @items} {@opts[:tbody_tr_attrs]} id={get_in(item, [:id])}>
           <%= for col <- @col do %>
             <%= if show_column?(col) do %>
               <td
